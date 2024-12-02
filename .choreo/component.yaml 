@@ -1,8 +1,9 @@
-version: 0.1
+schemaVersion: 1.0 
 
 endpoints:
   - name: "REST API"
-    port: 8000
+    service:
+      port: 8000
+      networkVisibility: Public
+      context: /
     type: REST
-    networkVisibility: Public
-    context: /
